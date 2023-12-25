@@ -1,0 +1,147 @@
+/* Nav */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:  url('../assets/Contact.png');
+}
+
+nav {
+    background-color: rgba(233, 225, 225, 0);
+    color: #000000;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    padding: 10px;
+    display: none;
+    position: absolute;
+    background-color: #A9B388;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.cart-icon {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+/* Forms */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    margin: 10px 0;
+    display: block;
+    
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cont-general{
+    display: flex;
+    margin: 120px;
+    margin-top: 20px ;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.text-help {
+    margin-top: 20px;
+}
+
+.title-contact {
+    font-size: 60px; 
+    font-weight: bold;
+       color: #ffffff; 
+}
+
+.subtitle {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #ffffff; 
+}
+.equipo{
+    font-size: 14px; 
+    font-weight: bold;
+    color: #ffffff; 
+}
+.button-enviar{
+    text-align: center;
+}

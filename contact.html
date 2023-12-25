@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav>
+        <div class="logo">
+            <a href="/home.html">
+                <img src="./assets/Logo FyA (1).png" alt="Carrito de compras">
+            </a>
+        </div>
+        <div class="conteiner-nav">
+            <a href="./home.html">Inicio</a>
+            <div class="dropdown">
+                <a href="./product.html">Productos</a>
+                <div class="dropdown-content">
+                    <a href="#">Categoría 1</a>
+                    <a href="#">Categoría 2</a>
+                    <a href="#">Categoría 3</a>
+                </div>
+            </div>
+            <a href="./contact.html">Contacto</a>
+    </nav>
+    <div class="cont-general">
+        <div class="text-help">
+            <h1 class="title-contact">¿Te ayudamos?</h1>
+            <h4 class="subtitle" id="text">Envíanos tu consulta, te brindaremos asesoramiento lo más pronto posible.
+            </h4>
+            <h4 class="subtitle" id="text">Te desea un excelente día,</h4>
+            <h6 class="equipo" id="text">Equipo de Tu Tienda®</h6>
+        </div>
+
+
+
+
+        <section class="container">
+            <form id="Form" action="https://formspree.io/f/xeqyjryw" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+                <div class="button-enviar">
+                    <button type="submit">Enviar Mensaje</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>
